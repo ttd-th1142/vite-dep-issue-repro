@@ -13,5 +13,8 @@ export function Test() {
         }
     });
 
-    return <div ref={exampleAfeRef} />;
+    return <>
+        In host-react-16-vite, loading in feature-react-18:
+        <div ref={exampleAfeRef} />
+    </>;
 }

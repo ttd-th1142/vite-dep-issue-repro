@@ -13,5 +13,8 @@ export function App() {
         }
     });
 
-    return <div ref={exampleAfeRef} />;
+    return <>
+        In host-react-16-webpack, loading in feature-react-18:
+        <div ref={exampleAfeRef} />
+    </>;
 }
