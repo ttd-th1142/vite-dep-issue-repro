@@ -7,8 +7,13 @@
         "host-react-16-webpack"
     ],
     "scripts": {
-        "build": "yarn workspace feature-react-18 build",
-        "start-vite": "yarn workspace host-react-16-vite install && yarn workspace host-react-16-vite start",
-        "start-webpack": "yarn workspace host-react-16-webpack install && yarn workspace host-react-16-webpack start"
+        "build-feature": "yarn workspace feature-react-18 cold-build",
+        "cold-start-vite": "yarn workspace host-react-16-vite cold-start",
+        "cold-start-webpack": "yarn workspace host-react-16-webpack cold-start",
+        "cold-start": "concurrently \"yarn run cold-start-*\"",
+        "clean-start": "yarn build-feature && yarn cold-start"
+    },
+    "devDependencies": {
+        "concurrently": "^7.6.0"
     }
 }

@@ -7,7 +7,7 @@ export default defineConfig({
     server: {
         hmr: { protocol: 'ws' },
         strictPort: true,
-        port: 8083,
+        port: 9001,
     },
     plugins: [react()],
 });

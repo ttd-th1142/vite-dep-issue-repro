@@ -1,10 +1,11 @@
 {
-    "name": "host-react-16",
+    "name": "host-react-16-vite",
     "private": true,
     "version": "0.1.0",
     "repository": "https://github.com/ttd-th1142/vite-dep-issue-repro.git",
     "scripts": {
         "start": "vite",
+        "cold-start": "yarn install && yarn start",
         "build": "tsc && vite build",
         "preview": "vite preview"
     },

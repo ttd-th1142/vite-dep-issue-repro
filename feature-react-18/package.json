@@ -18,6 +18,7 @@
     "scripts": {
         "build": "NODE_ENV=development tsup --sourcemap --dts",
         "start": "cross-env NODE_ENV=development tsup --watch",
+        "cold-build": "yarn install && yarn build",
         "build-release": "cross-env NODE_ENV=production tsup --sourcemap --dts"
     },
     "devDependencies": {

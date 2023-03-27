@@ -1,4 +1,4 @@
-import { React18Component} from 'feature-react-18';
+import { React18Component } from 'feature-react-18';
 import { useRef, useEffect } from 'react';
 
 export function App() {
