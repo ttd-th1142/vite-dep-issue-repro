@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": ["./tsup-env.d.ts"]
+    },
+    "include": [
+        "@ttd-afe-remote/solimar-learn-overview/archipelago.config.js",
+        "./tsup.config.ts"
+    ]
+}

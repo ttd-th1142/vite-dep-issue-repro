@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "license": "MIT",
+    "workspaces": [
+        "feature-react-18",
+        "host-react-16-vite",
+        "host-react-16-webpack"
+    ],
+    "scripts": {
+        "build": "yarn workspace feature-react-18 build",
+        "start-vite": "yarn workspace host-react-16-vite install && yarn workspace host-react-16-vite start",
+        "start-webpack": "yarn workspace host-react-16-webpack install && yarn workspace host-react-16-webpack start"
+    }
+}
